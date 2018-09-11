@@ -1,19 +1,15 @@
-const ENABLE_SERVICE_WORKER = false;
-
-if (ENABLE_SERVICE_WORKER == true ){
-  if ('serviceWorker' in navigator) {
-    /* Register service worker */
-    navigator.serviceWorker.register('/svcWorker.js')
-    .catch(function(err) {
-      console.error(err);
-    });
-  }
+if ('serviceWorker' in navigator) {
+  /* Register service worker */
+  navigator.serviceWorker.register('/svcWorker.js')
+  .catch(function(err) {
+    console.error(err);
+  });
 }
 
 let restaurants,
   neighborhoods,
   cuisines;
- var newMap,
+var newMap,
   markers = [];
 
 /**
@@ -221,4 +217,3 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 } */
-
