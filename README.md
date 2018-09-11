@@ -9,6 +9,7 @@ This is Udacity Front End Nanodegree Program's fifth project.  This site uses a 
 * Check Python version on terminal "python -v"
 * For Python v2 run on terminal "python -m SimpleHTTPServer 8000
 * For Python v3 run "python -m http.server 8000"
+* Visit the site in your browser at localhost:8000
 
 ## Leaflet.js and Mapbox:
 
